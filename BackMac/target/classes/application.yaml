@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: ms-login
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/backmac
+    username: springuser
+    password: springpassword
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://login.microsoftonline.com/c59a4270-0c88-46d9-a708-38639783c0b1/v2.0
+          audiences:
+            - 24a66d14-c9c3-41c1-a93b-7e5926389c91
+
+server:
+  port: 8080
