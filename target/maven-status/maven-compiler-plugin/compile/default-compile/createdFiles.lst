@@ -1,0 +1,6 @@
+backend/backmac/security/SecurityConfig.class
+backend/backmac/model/Usuario$UsuarioBuilder.class
+backend/backmac/repository/UsuarioRepository.class
+backend/backmac/BackMacApplication.class
+backend/backmac/model/Usuario.class
+backend/backmac/controller/AuthController.class
