@@ -20,3 +20,8 @@ docker run -d -p 8080:8080 --name ms-login img-ms-login
 ## API
 Endpoint principal:
 - `POST /api/v1/auth/login`: Sincroniza al usuario utilizando el token JWT de Azure AD enviado en el header de autorización.
+
+## Cambios Recientes
+### Versión 2.0.4
+- Optimización de script `entrypoint.sh` para inicialización automática de PostgreSQL y usuario en entorno Docker.
+- Configuración para despliegue Cloud Native standalone en AWS Academy.
